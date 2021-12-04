@@ -8,8 +8,6 @@ import Posts from './components/Posts/Posts';
 import Form from './components/Form/Form';
 import useStyles from './styles';
 
-require('dotenv').config({ path: '../.env'});
-
 const App = () => {
     const [currentId, setCurrentId] = useState(0);
     const classes = useStyles();
@@ -33,8 +31,7 @@ const App = () => {
                             <Posts> setCurrentId={setCurrentId}</Posts>
                         </Grid>
                         <Grid item xs={12} sm={4}>
-                            <Form currentId={currentId} setCurrentId={setCurrentId}>
-                            </Form>
+                            <Form currentId={currentId} setCurrentId={setCurrentId} />
                         </Grid>
                     </Grid>
                 </Container>
