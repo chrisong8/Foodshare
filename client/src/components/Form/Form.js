@@ -5,6 +5,12 @@ import FileBase from 'react-file-base64';
 import { useDispatch, useSelector } from 'react-redux';
 import { createPost, updatePost } from '../../actions/posts';
 
+// author
+// title
+// location
+// message
+// tags
+// selected file
 const Form = ({ currentId, setCurrentId }) => {
     const [postData, setPostData] = useState({
         author: '', title: '', location: '', message: '', tags: '', selectedFile: ''
@@ -52,6 +58,6 @@ const Form = ({ currentId, setCurrentId }) => {
             </form>
         </Paper>
     );
-}
+};
 
 export default Form;

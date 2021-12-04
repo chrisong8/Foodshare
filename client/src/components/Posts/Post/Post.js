@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardActions, CardContent, CardMedia, Button, Typography } from '@material-ui/core/';
-import { FaTrash, FaRegThumbsUp, FaBeer } from 'react-icons/fa';
+import { FaTrash, FaRegThumbsUp, FaEllipsisH } from 'react-icons/fa';
 import { useDispatch } from 'react-redux';
 
 import { likePost, deletePost } from '../../../actions/posts';
@@ -18,7 +18,7 @@ const Post = ({ post, setCurrentId }) => {
                 <Typography variant="body2">{moment(post.createdAt).fromNow()}</Typography>
             </div>
             <div className={classes.overlay2}>
-                <Button style={{ color: 'white' }} size="small" onClick={() => setCurrentId(post._id)}><FaBeer/></Button>
+                <Button style={{ color: 'white' }} size="small" onClick={() => setCurrentId(post._id)}><FaEllipsisH/></Button>
             </div>
             <div className={classes.details}>
                 <Typography variant="body2" color="textSecondary" component="h2">{post.tags.map((tag) => `#${tag} `)}</Typography>
