@@ -10,9 +10,18 @@ export default makeStyles(() => ({
         alignItems: 'center',
     },
     heading: {
-        color: 'rgba(0, 173, 255, 1)',
+        color: '#A2C2D4',
+        fontFamily: 'Calibri',
+        fontWeight: 500
     },
     image: {
         marginLeft: '30px',
+    },
+    footer: {
+        marginTop: '50px',
+        textAlign: 'center',
+        fontFamily: 'Helvetica',
+        fontSize: '14px',
+        display: 'block'
     },
 }));

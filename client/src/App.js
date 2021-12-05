@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, AppBar, Typography, Grid, Grow} from '@material-ui/core';
 import { useDispatch } from 'react-redux';
-
+import { Footer } from 'react-materialize';
 import { getPosts } from './actions/posts.js';
 import foodshare from './images/foodshare.jpg'
 import Posts from './components/Posts/Posts';
@@ -36,6 +36,8 @@ const App = () => {
                     </Grid>
                 </Container>
             </Grow>
+            <Footer className={classes.footer} copyrights="&copy; Chris Ong 2021">
+            </Footer>
         </Container>
     )
 }

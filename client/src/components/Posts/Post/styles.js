@@ -4,7 +4,7 @@ export default makeStyles({
   media: {
     height: 0,
     paddingTop: '56.25%',
-    backgroundColor: 'rgba(0, 0, 0, 1)',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
     backgroundBlendMode: 'darken',
   },
   border: {
@@ -33,13 +33,13 @@ export default makeStyles({
     right: '20px',
     color: 'white',
   },
+  grid: {
+    display: 'flex',
+  },
   details: {
     display: 'flex',
     justifyContent: 'space-between',
     margin: '20px',
-  },
-  grid: {
-    display: 'flex',
   },
   title: {
     padding: '0 16px',
