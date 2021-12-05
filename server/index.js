@@ -11,7 +11,7 @@ app.use(express.urlencoded({ limit: "30mb", extended: false }));
 app.use(cors());
 app.use('/posts', postRoutes);
 
-const key = "mongodb+srv://chrisong:thehobo123@cluster0.rdsxu.mongodb.net/cluster0?retryWrites=true&w=majority";
+const key = process.env.REACT_APP_KEY;
 const CONNECTION_URL = key;
 // console.log(process.env.REACT_APP_KEY);
 const PORT = process.env.PORT || 5000;
