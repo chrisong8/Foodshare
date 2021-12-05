@@ -1,2 +1,2 @@
 .env
-server/index.js
+/src/server/index.js
